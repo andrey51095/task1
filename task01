@@ -1,1 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>task01</title>
+  <script>
+  	function typeSheeps(){
+  		var count = document.getElementById("count").value;
+  		var st = document.getElementById("info");
+  		var buff= null;
+  		for (var i = 1; i <= count; i++) {
+  			buff=buff+i+" sheep... ";
+  		}
+  		st.innerHTML = buff;
+  	}
+  </script>
 
+ </head>
+ <body>
+ <form action="">
+  <p>
+   <input type="text" id="count">
+   <input type="button" value="Отправить" onclick="typeSheeps()">
+</p>
+<p><output id="info"></output></p>
+ </form>
+ </body>
+</html>
